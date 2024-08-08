@@ -1,0 +1,32 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env VITE_ENV=development vite serve --host",
+    "build": "cross-env VITE_ENV=production vite build",
+    "preview_production": "cross-env VITE_ENV=production npm run build && vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "agentkeepalive": "^4.2.1",
+    "axios": "^1.2.2",
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^3.0.0",
+    "shelljs": "^0.8.5",
+    "vite": "^5.0.0"
+  }
+}
